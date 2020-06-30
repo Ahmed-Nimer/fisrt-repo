@@ -1,0 +1,246 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  background-color: white;
+  margin: 0;
+  color: white;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+#showcase{
+	margin: 0;
+	padding: 0;
+	background: url(img/main.jpg) no-repeat center center/cover;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow-y: hidden;
+}
+
+#showcase .container{
+	margin-top: 15vh;
+	margin-left: 100vh
+}
+
+.container{
+	padding: 0 3rem;
+	margin: 0 auto;
+	max-width: 1180px;
+	text-align: center;
+}
+
+#showcase h1{
+	font-size: 4rem;
+}
+
+#showcase .container h3{
+	font-size: 2rem;
+}
+
+ nav .head:hover{
+	border-bottom: none;
+}
+
+nav .head h3:hover{
+	color: black;
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: #333;
+  color: #eee;
+  position: fixed;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  float: left;
+}
+
+nav a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #eee;
+  text-decoration: none;
+}
+
+nav li:hover {
+  border-bottom: 1px #cc0000 solid;
+}
+nav li.login{
+	display: inline;
+	float: right;
+	margin-right: 20px;
+}
+
+nav a#openup {
+  display: none;
+}
+
+nav li.login:hover{
+	border-bottom: none;
+}
+
+nav li.login a:hover{
+	color: black;
+}
+
+.login-bar{
+	position: absolute;
+	padding: 20px 10px 10px 10px;
+	background-color: #333;
+	top: 55px;
+	right: 45px;
+	border-radius: 7px;
+	transform: translateX(250px);
+	transition: transform 0.5s ease-in-out;
+}
+
+.login-bar input{
+	height: 25px;
+}
+
+.login-bar a{
+	text-decoration: none;
+	display: block;
+	margin-left: 60px;
+	margin-right: 45px;
+	margin-top: 10px;
+	color: white;
+}
+
+.login-bar .button-1{
+	color: #333;
+	background-color: white;
+	color: #333;
+	padding: 5px 12px;
+	border:none;
+	border-radius: 7px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.login-bar .button-2{
+	margin-left: 65px;
+}
+
+.login-bar .button-2:hover{
+	border-bottom: 1px #cc0000 solid;
+}
+
+.login-bar.show{
+transform: translateX(15px);
+}
+
+.service{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-gap: 15px;
+	margin-top: 20px;
+	width: 90%;
+	color: black;
+	text-align: center;
+	margin: auto;
+}
+
+@media screen and (max-width: 580px) {
+  h1 {
+    font-size: 2.8em;
+  }
+
+  .hide-on-small{
+  	display: none;
+  }
+
+  #showcase .container{
+	margin-top: 10vh;
+	margin-left: 0;
+}
+
+
+  nav {
+    height: auto;
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #333;
+    border-bottom: 1px solid #555;
+  }
+  nav a:hover {
+    background: #444;
+  }
+
+  nav li.login{
+	display: inline;
+	float: right;
+	margin-right: -1px;
+}
+
+nav li.login a:hover{
+	color: white;
+}
+
+.login-bar.show{
+	display: none;
+}
+
+  nav a#openup:after {
+    content: "|||";
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+  nav a#openup {
+    display: block;
+    background-color: #333;
+    width: 100%;
+    position: relative;
+  }
+}
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
