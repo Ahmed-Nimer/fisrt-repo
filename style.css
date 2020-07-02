@@ -190,7 +190,7 @@ transform: translateX(15px);
   color: #990000;
 }
 
-#projects{
+#Projects{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-gap: 20px;
@@ -201,28 +201,28 @@ transform: translateX(15px);
   text-align: left;
 }
 
-#projects p{
+#Projects p{
   color: #333;
 }
 
-#projects img{
+#Projects img{
   width: 100%;
 }
 
-#projects h3{
+#Projects h3{
   padding-bottom: 1rem;
 }
 
-#projects a{
+#Projects a{
   text-decoration: none;
   color: #333;
 }
 
-#projects a:hover{
+#Projects a:hover{
   color: #990000;
 }
 
-#projects a:hover i{
+#Projects a:hover i{
   padding-left: 10px;
 }
 
@@ -358,6 +358,12 @@ nav li.login a:hover{
 
   .service .l img{
     height: 250px;
+  }
+
+  #Projects{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
   #courses{
