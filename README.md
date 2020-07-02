@@ -1,2 +1,2 @@
 # Learning Web
-this is my first web project
+this is my first front-end web design.

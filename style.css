@@ -6,7 +6,7 @@
 
 body {
   font-family: 'PT Sans', sans-serif;
-  background-color: white;
+  background-color: #e0e0e0;
   margin: 0;
   color: white;
   line-height: 1.6;
@@ -48,7 +48,7 @@ body {
 }
 
 nav .head h3:hover{
-	color: black;
+	color: #990000;
 }
 
 nav {
@@ -97,7 +97,7 @@ nav li.login:hover{
 }
 
 nav li.login a:hover{
-	color: black;
+	color: #990000;
 }
 
 .login-bar{
@@ -118,8 +118,8 @@ nav li.login a:hover{
 .login-bar a{
 	text-decoration: none;
 	display: block;
-	margin-left: 60px;
-	margin-right: 45px;
+	margin-left: 50px;
+	margin-right: 55px;
 	margin-top: 10px;
 	color: white;
 }
@@ -136,7 +136,7 @@ nav li.login a:hover{
 }
 
 .login-bar .button-2{
-	margin-left: 65px;
+	margin-left: 55px;
 }
 
 .login-bar .button-2:hover{
@@ -151,11 +151,130 @@ transform: translateX(15px);
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
 	grid-gap: 15px;
-	margin-top: 20px;
+  margin-top: 30px;
+  padding-top: 2rem;
 	width: 90%;
 	color: black;
 	text-align: center;
 	margin: auto;
+}
+
+.service h3{
+  padding-top: 1rem;
+}
+
+.service p{
+  color: #333;
+}
+
+.service img{
+  width:100%;
+}
+
+.service .l img{
+  height: 195px;
+}
+
+.service .offers{
+  text-decoration: none;
+  color:#333;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.service .offers:hover i{
+  padding-left: 10px;
+}
+
+.service .offers:hover{
+  color: #990000;
+}
+
+#projects{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 20px;
+  width: 80%;
+  padding-top: 4rem;
+  color: black;
+  margin: auto;
+  text-align: left;
+}
+
+#projects p{
+  color: #333;
+}
+
+#projects img{
+  width: 100%;
+}
+
+#projects h3{
+  padding-bottom: 1rem;
+}
+
+#projects a{
+  text-decoration: none;
+  color: #333;
+}
+
+#projects a:hover{
+  color: #990000;
+}
+
+#projects a:hover i{
+  padding-left: 10px;
+}
+
+#courses{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 15px;
+  margin-top: 30px;
+  padding-top: 4rem;
+  width: 90%;
+  color: black;
+  margin: auto;
+  text-align: center;
+}
+
+#courses img{
+  width: 25%;
+}
+
+#courses a{
+  text-decoration: none;
+  color:#333;
+  font-weight: bold;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#courses a:hover{
+  color: #990000;
+}
+
+.follow{
+  padding: 4rem 0 0 0;
+}
+
+.follow p{
+  color: #333;
+  float: left;
+  font-weight: bold;
+}
+
+.follow a{
+  display: inline;
+  padding:0 1rem;
+}
+
+.f{
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  width: 100%;
 }
 
 @media screen and (max-width: 580px) {
@@ -231,6 +350,22 @@ nav li.login a:hover{
     width: 100%;
     position: relative;
   }
+
+  .service{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .service .l img{
+    height: 250px;
+  }
+
+  #courses{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;
+  }
+  
 }
 .cf:before, .cf:after {
   content: "";
