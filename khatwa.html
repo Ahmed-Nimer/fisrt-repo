@@ -1,61 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<mta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Khatwa</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <title>Khatwa</title>
 </head>
+<!--Header-->
 <body>
-<div id="showcase">
-	<header>
-		<nav class='cf'>
-  <ul class='cf'>
-  	<li class="head hide-on-small">
-  		<a href="#showcase"><h3>Khatwa</h3></a>
-  	</li>
-  	<li>
-  		<a href="#showcase">Home</a>
-  	</li>
-    <li>
-      <a href='#service'>Services</a>
-    </li>
-    <li>
-      <a href='#Projects'>Projects</a>
-    </li>
-    <li>
-      <a href='#courses'>Courses</a>
-    </li>
-    <li class="login">
-    	<a href='#'>Sign In</a>
-    </li>
-  </ul>
-  <a href='#' id='openup'>Khatwa</a>
-</nav>
-	</header>
-	<div class="main-section container">
-		<h1>Khatwa</h1>
-		<h3>Best Apps and websites for Learning Programming and Coding</h3>
+    <div id="showcase">
+        <header>
+            <nav class='cf'>
+                <ul class='cf'>
+                    <li class="head hide-on-small">
+                         <a href="#showcase"><h3>KHATWA</h3></a>
+                    </li>
+                    <li class="list">
+                        <a href="#showcase">Home</a>
+                    </li>
+                    <li class="list">
+                        <a href='#service'>Services</a>
+                    </li>
+                    <li class="list">
+                        <a href='#Projects'>Projects</a>
+                    </li>
+                    <li class="list">
+                        <a href='#courses'>Courses</a>
+                    </li>
+                    <li class="login list">
+                        <a href='#'>Sign In</a>
+                    </li>
+                </ul>
+                    <a href='#' id="openup">KHATWA</a>
+            </nav>
+        </header>
 	</div>
-</div>
 
+<!--landing page-->	
+<section class="container">
+        <div class="container-text">
+        	<h1>Khatwa</h1>
+        	<h3>Best Apps and websites for Learning Programming and Coding</h3>
+        </div>
+        <div class="container-img"></div>
+</section>
+
+<!--Login bar-->
 <div class="login-bar">
 	<form action="process.php" method="POST">
-	<div>
-		<label>Email</label><br>
-		<input type="email" name="email" placeholder="Enter Email...">
-	</div>
-    <div>
-		<br>
-		<label>Password</label><br>
-		<input type="text" name="password" placeholder="password">
-	</div>
+		<div>
+			<label>Email</label><br>
+			<input type="email" name="email" placeholder="Enter Email...">
+		</div>
+    	<div>
+			<br>
+			<label>Password</label><br>
+			<input type="password" name="password" placeholder="password">
+		</div>
 	</form>
-	<a href="#" class="button-1">Login</a>
-	<a href="#" class="button-2">Sign Up</a>
+		<a href="#" class="button-1">Login</a>
+		<a href="#" class="button-2">Sign Up</a>
 </div>
 
+<!--Servises section-->
 <div id="service" class="service">
 	<div>
 		<img src="./img/desktob.jpg">
@@ -84,7 +92,7 @@
 		<br>
 		<a href="#" class="offers">Offers<i class="fas fa-chevron-right"></i></a>
 	</div>
-	<div class="l">
+	<div>
 		<img src="./img/mobile.jpg">
 		<h3>Mobile Applications</h3>
 		<p>The latest entertainment apps now come installed with macOS Catalina. Upgrade today to get your favorite music, movies, TV shows, and podcasts. You can join Apple Music and stream — or download and play offline — over 60 million songs, ad‑free.</p>
@@ -95,11 +103,12 @@
 	</div>
 </div>
 
+<!--projects section-->
 <div id="Projects">
 	<div>
 		<img src="./img/project.jpg">
 	</div>
-	<div>
+	<div class="Projects-text">
 		<h3>Our Projects</h3>
 		<p>The latest entertainment apps now come installed with macOS Catalina. Upgrade today to get your favorite music, movies, TV shows, and podcasts. You can join Apple Music and stream — or download and play offline — over 60 million songs, ad‑free.</p>
 		<br>
@@ -109,47 +118,47 @@
 	</div>
 </div>
 
+<!--Courses section-->
 <div id="courses">
-	<div>
-		<a href="#"><img src="./img/c++.png"></a>
-		<h3><a href="">C++</a></h3>
-	</div>
-	<div>
-		<a href="#"><img src="./img/html.png"></a>
-		<h3><a href="">HTML</a></h3>
-	</div>
-	<div>
-		<a href="#"><img src="./img/java.png"></a>
-		<h3><a href="">Java</a></h3>
-	</div>
-	<div>
-		<a href="#"><img src="./img/php.png"></a>
-		<h3><a href="">PHP</a></h3>
-	</div>
-	<div>
-		<a href="#"><img src="./img/css.png"></a>
-		<h3><a href="">CSS</a></h3>
-	</div>
+    <h2>Courses</h2>
+    <div class="courses-grid">
+	    <div>
+		    <a href="#"><img src="./img/c++.png"></a>
+	    </div>
+	    <div>
+		    <a href="#"><img src="./img/html.png"></a>
+        </div>
+	    <div>
+		    <a href="#"><img src="./img/php.png"></a>
+	    </div>
+	    <div>
+		    <a href="#"><img src="./img/css.png"></a>
+        </div>
+    </div>    
 </div>
 
+<!--follow us-->
 <section class="follow">
-		<p>Follow Khatwa</p>
-		<a href="#"><img src="https://i.ibb.co/LrVMXNR/social-fb.png" alt="facebook"></a>
-		<a href="#"><img src="https://i.ibb.co/vJvbLwm/social-twitter.png" alt="twitter"></a>
-		<a href="#"><img src="https://i.ibb.co/b30HMhR/social-linkedin.png" alt="linkedin"></a>
-	</section>
+    <p>Follow Khatwa</p>
+    <a href="#"><img src="https://i.ibb.co/LrVMXNR/social-fb.png" alt="facebook"></a>
+    <a href="#"><img src="https://i.ibb.co/vJvbLwm/social-twitter.png" alt="twitter"></a>
+    <a href="#"><img src="https://i.ibb.co/b30HMhR/social-linkedin.png" alt="linkedin"></a>
+</section>
 
-	<footer class="f">
-		<div>copyright &copy; KHATWA 2020</div>
-	</footer>
+<!--Footer-->
+<footer class="f">
+    <div>copyright &copy; KHATWA 2020</div>
+</footer>
 
-<script>
-      document.querySelector('.login').addEventListener('click', () => document.querySelector('.login-bar').classList.toggle('show'));
-  </script>
-  <script
-  src="https://code.jquery.com/jquery-3.5.1.min.js"
-  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-  crossorigin="anonymous"></script>
-  <script src="main.js"></script>
+<!--JavaScript login bar-->
+    <script>
+        document.querySelector('.login').addEventListener('click', () => document.querySelector('.login-bar').classList.toggle('show'));
+	</script>
+		
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 </html>
