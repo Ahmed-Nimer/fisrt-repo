@@ -288,6 +288,10 @@ color: #990000;
       display: inline-block;
   }
 
+  nav ul{
+    list-style: none;
+  }
+
   .cf{
       height: 50px;
       width: 100%;
@@ -303,7 +307,6 @@ color: #990000;
     }
     
     .cf li {
-      display: inline;
       float: left;
       justify-content: center;
       margin-right: 2rem;
@@ -336,7 +339,6 @@ color: #990000;
   }
 
   nav li.login{
-      display: inline;
       float: right;
       margin-right: 30px;
   }
