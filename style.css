@@ -19,6 +19,7 @@ nav {
   color: #eee;
   position: fixed;
   height: auto;
+  opacity: 0.9;
 }
 
 nav ul {
@@ -241,9 +242,54 @@ color: #990000;
   color: #990000;
 }
 
+#contact{
+  flex-direction: column;
+}
+
+#contact .contacts{
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+#contact .contacts h2{
+  margin-bottom: 0.75rem;
+}
+
+#contact .contacts .form-group{
+  padding: 0.5rem 1rem;
+}
+
+#contact .contacts label{
+  display: block;
+}
+
+#contact .contacts input, #contact .contacts textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact .contacts .btn{
+  display: block;
+  background-color: white;
+  color: #333;
+  text-align: center;
+  padding: 0.25rem 0;
+}
+
+#contact .contacts .btn:hover{
+  background-color: #555;
+}
+
+#contact .map{
+  height: 200px;
+}
+
 /*Follow us*/
 .follow{
-  padding: 4rem 0 0 0;
+  padding: 1rem 0 0 0;
 }
 
 .follow p{
@@ -270,6 +316,16 @@ color: #990000;
   body{
       overflow-x: hidden;
   }
+
+  .btn{
+    display: inline-block;
+    background-color: white;
+    color: #333;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+}
 
   .container{
       display: flex;
@@ -375,6 +431,57 @@ color: #990000;
   .courses-grid{
       display: grid;
       grid-template-columns:repeat(2,1fr);
+}
+
+#contact{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+#contact .contacts{
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+#contact .contacts h2{
+  margin-bottom: 0.75rem;
+}
+
+#contact .contacts .form-group{
+  padding: 0.5rem 1rem;
+}
+
+/* #contact .contacts, #contact .map{
+  flex: 1;
+} */
+
+#contact .contacts label{
+  display: block;
+}
+
+#contact .contacts input, #contact .contacts textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact .contacts .btn{
+  display: block;
+  background-color: white;
+  color: #333;
+  text-align: center;
+  padding: 0.25rem 0;
+}
+
+#contact .contacts .btn:hover{
+  background-color: #555;
+}
+
+#contact .map {
+  flex: 2;
 }
 }
 
