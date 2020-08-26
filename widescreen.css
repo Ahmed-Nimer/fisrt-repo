@@ -1,0 +1,144 @@
+@media (min-width:700px){
+    body{
+        overflow-x: hidden;
+    }
+  
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+  
+    .container-text{
+        height: 100vh;
+    }
+  
+    .container-img{
+        height: 100vh;
+    }
+  
+    .hide-on-small{
+        display: inline-block;
+    }
+  
+    nav ul{
+      list-style: none;
+    }
+  
+    .cf{
+        height: 50px;
+        width: 100%;
+        background-color: #333;
+        color: #eee;
+        position: fixed;
+      }
+      
+      .cf ul {
+        display: inline;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .cf li {
+        float: left;
+        justify-content: center;
+        margin-right: 2rem;
+      }
+      
+      .cf a {
+        width: 100px;
+        border-bottom: none;
+      }
+  
+      nav li:hover{
+          border-bottom: none;
+      }
+      
+      nav .list a:hover{
+        color: #990000;
+      }
+  
+      nav a#openup {
+        display: none;
+      }
+    
+    nav .head h3:hover{
+        color: #990000;
+    }
+  
+    nav li.login{
+        float: right;
+        margin-right: 30px;
+    }
+  
+    .service{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        margin-bottom: 2rem;
+        width: 70%;
+    }
+  
+    #Projects{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        grid-gap: 3rem;
+        width: 70%;
+        margin-bottom: 5rem;
+    }
+  
+    #Projects img{
+        height: 45vh;
+    }
+  
+    #courses{
+        width: 70%;
+        margin: auto;
+    }
+  
+    #courses h2{
+        color: black;
+        text-align: start;
+    }
+  
+    .courses-grid{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+  }
+  
+  #contact{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  
+  #contact .contacts{
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  #contact .contacts h2{
+    margin-bottom: 0.75rem;
+  }
+  
+  #contact .contacts .form-group{
+    padding: 0.5rem 1rem;
+  }
+  
+  #contact .contacts label{
+    display: block;
+  }
+  
+  #contact .contacts input, #contact .contacts textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #contact .map {
+    flex: 2;
+    height: 450px;
+  }
+  }
+  
+  
